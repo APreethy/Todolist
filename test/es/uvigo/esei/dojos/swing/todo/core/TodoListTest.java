@@ -118,6 +118,21 @@ System.out.println("Entry is removed");
 @Test
 public void testSize() 
 {
+    System.out.println("size");
+    TodoList instance= new TodoList();
+    String item="Prajkta";
+    instance.add(item);
+    item="Preethy";
+    instance.add(item);
+    int expResult = 2;
+    int result = instance.size();
+    assertEquals(expResult, result);
+    System.out.println("size of the entryn is"+result);
+        
+    
 }
+
+
+
     
 }
