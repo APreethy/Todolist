@@ -91,22 +91,33 @@ System.out.println("Entry is added");
 
 }
 
-@Test
-public void testEditAt() 
-{
-fail("Not yet implemented");
-}
+
+
+
+
+
+  
 
 @Test
 public void testRemoveAt() 
 {
-fail("Not yet implemented");
+System.out.println("Remove");
+int i =0;
+TodoList instance= new TodoList();
+String item="Prajkta";
+instance.add(item);
+int i1=instance.size();
+instance.removeAt(0);
+int i2= instance.size();
+assertTrue(i2<i1);
+System.out.println("Entry is removed");
+
+
 }
 
 @Test
 public void testSize() 
-{
-fail("Not yet implemented");
+
 }
     
 }
