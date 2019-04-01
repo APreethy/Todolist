@@ -16,6 +16,7 @@ import static org.junit.Assert.*;
 /**
  *
  * @author comqsjb
+ *
  */
 public class TodoListTest {
     
@@ -44,9 +45,22 @@ public class TodoListTest {
     @Test
 public void testMoveUp() 
 {
-fail("Not yet implemented");
-}
+System.out.println("moveup");
+int i=0;
+TodoList instance= new TodoList();
+String item ="Prajkta";
+instance.add(item);
+item ="Preethy";
+instance.add(item);
+instance.moveUp(1);
+String result=instance.elementAt(0);
+String expResult="Preethy";
+assertEquals(expResult,result);
+System.out.println("Entry is Mouved Up");
 
+
+
+}
 @Test
 public void testMoveDown() 
 {
