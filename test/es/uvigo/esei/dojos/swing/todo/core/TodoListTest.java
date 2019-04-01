@@ -64,13 +64,31 @@ System.out.println("Entry is Mouved Up");
 @Test
 public void testMoveDown() 
 {
-fail("Not yet implemented");
+System.out.println("moveDown");
+int i=0;
+TodoList instance= new TodoList();
+String item ="Prajkta";
+instance.add(item);
+item ="Preethy";
+instance.add(item);
+instance.moveDown(0);
+String result=instance.elementAt(1);
+String expResult="Prajkta";
+assertEquals(expResult,result);
+System.out.println("Entry is Moved Down");
 }
 
 @Test
 public void testAdd() 
 {
-fail("Not yet implemented");
+System.out.println("add");
+String item ="Prajkta";
+TodoList instance= new TodoList();
+instance.add(item);
+int i = instance.size();
+assertTrue(1>0);
+System.out.println("Entry is added");
+
 }
 
 @Test
