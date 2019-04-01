@@ -115,6 +115,30 @@ System.out.println("Entry is removed");
 
 }
 
+
+@Test
+public void testEditAt()
+{
+System.out.println("Edit at");
+TodoList instance= new TodoList();
+int i =0;
+String item= "Rose";
+instance.add(item);
+item="Rylyn";
+instance.add(item);
+String result =instance.elementAt(1);
+System.out.println("Entry is at position 1+result");
+String newValue ="neha";
+instance.editAt(1, newValue);
+result = instance.elementAt(1);
+System.out.println("After editing the entry at pos 1 "+result);
+assertEquals(newValue,result);
+System.out.println("entry is successfully edited");
+
+}
+
+
+
 @Test
 public void testSize() 
 {
